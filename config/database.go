@@ -9,10 +9,10 @@ import (
 func DBConnection() (*sql.DB, error) {
 	dbDriver := "mysql"
 	dbUser := "root"
-	dbPass := "NwWQVNmDDOC1AFeFldKjgjhJHEF1vDxS"
-	dbName := "DataCampus"
-	dbHost := "viaduct.proxy.rlwy.net"
-	dbPort := "37408"
+	dbPass := "NUSEB1jLGkRnCc1ZFYWVRpjzqSYqbVnh"
+	dbName := "railway" // replace with your database name
+	dbHost := "roundhouse.proxy.rlwy.net"
+	dbPort := "13023"
 
 	dbURL := dbUser + ":" + dbPass + "@tcp(" + dbHost + ":" + dbPort + ")/" + dbName
 
