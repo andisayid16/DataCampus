@@ -9,9 +9,13 @@ import (
 func DBConnection() (*sql.DB, error) {
 	dbDriver := "mysql"
 	dbUser := "root"
-	dbPass := ""
+	dbPass := "NwWQVNmDDOC1AFeFldKjgjhJHEF1vDxS"
 	dbName := "DataCampus"
+	dbHost := "viaduct.proxy.rlwy.net"
+	dbPort := "37408"
 
-	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
+	dbURL := dbUser + ":" + dbPass + "@tcp(" + dbHost + ":" + dbPort + ")/" + dbName
+
+	db, err := sql.Open(dbDriver, dbURL)
 	return db, err
 }
