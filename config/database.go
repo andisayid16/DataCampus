@@ -10,7 +10,7 @@ func DBConnection() (*sql.DB, error) {
 	dbDriver := "mysql"
 	dbUser := "root"
 	dbPass := "NUSEB1jLGkRnCc1ZFYWVRpjzqSYqbVnh"
-	dbName := "railway" // replace with your database name
+	dbName := "railway"
 	dbHost := "roundhouse.proxy.rlwy.net"
 	dbPort := "13023"
 
